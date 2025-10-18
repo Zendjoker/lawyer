@@ -442,6 +442,17 @@ class ContactForm {
 // Initialize contact form when called manually (for dynamic loading)
 // Note: Don't auto-initialize since we're loading dynamically
 
+// Global initialization function for dynamic loading
+window.initContactForm = function() {
+    console.log('Initializing ContactForm globally...');
+    if (document.getElementById('contactForm')) {
+        window.contactFormInstance = new ContactForm();
+        console.log('ContactForm instance created and assigned to window.contactFormInstance');
+    } else {
+        console.error('Contact form element not found in DOM');
+    }
+};
+
 // Export for module use
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ContactForm;

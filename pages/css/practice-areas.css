@@ -1459,3 +1459,932 @@
         font-size: 0.9rem;
     }
 }
+
+/* ===== PERSONAL INJURY PAGE STYLES ===== */
+
+/* Personal Injury Why Matters Section */
+.personal-why-matters-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.personal-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.personal-why-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--lawyer-blue);
+}
+
+.personal-why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.personal-why-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--lawyer-blue), #2a4fa0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    position: relative;
+}
+
+.personal-why-icon::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(135deg, var(--lawyer-blue), var(--lawyer-red));
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.personal-why-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.personal-why-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.personal-why-card p {
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+}
+
+/* Personal Injury Cases Section */
+.personal-cases-section {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.personal-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.personal-case-card {
+    background: var(--white);
+    border: 2px solid #f0f0f0;
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.personal-case-card.featured {
+    border: 2px solid var(--lawyer-blue);
+    background: linear-gradient(135deg, rgba(31, 60, 136, 0.02), rgba(139, 30, 30, 0.02));
+}
+
+.personal-case-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--lawyer-blue), var(--lawyer-red));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.personal-case-card:hover::before {
+    opacity: 1;
+}
+
+.personal-case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+    border-color: var(--lawyer-blue);
+}
+
+.personal-case-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.personal-case-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    background: linear-gradient(135deg, var(--lawyer-blue), #2a4fa0);
+    flex-shrink: 0;
+}
+
+.personal-case-icon.medical {
+    background: linear-gradient(135deg, var(--lawyer-red), #a32525);
+}
+
+.personal-case-icon.premises {
+    background: linear-gradient(135deg, var(--lawyer-grey), #5a5a5a);
+}
+
+.personal-case-icon.workplace {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.personal-case-icon.wrongful-death {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+.personal-case-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.personal-case-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin: 0;
+}
+
+.personal-case-services {
+    margin-top: 1.5rem;
+}
+
+.personal-service-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 0.75rem 0;
+}
+
+.personal-service-item i {
+    color: var(--lawyer-blue);
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.personal-service-item span {
+    color: var(--lawyer-grey);
+    line-height: 1.5;
+}
+
+/* Personal Recovery Section */
+.personal-recovery-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.personal-recovery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.personal-recovery-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.personal-recovery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    border-color: var(--lawyer-blue);
+}
+
+.personal-recovery-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--lawyer-blue), #2a4fa0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.personal-recovery-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.personal-recovery-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.5rem;
+}
+
+.personal-recovery-card p {
+    color: var(--lawyer-grey);
+    font-size: 0.9rem;
+}
+
+/* Personal Laws Section */
+.personal-laws-section {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.personal-laws-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.personal-law-card {
+    background: var(--white);
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.personal-law-card:hover {
+    border-color: var(--lawyer-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.personal-law-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--lawyer-red), #a32525);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.personal-law-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.personal-law-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.personal-law-card p {
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+}
+
+/* Personal Accident Steps Section */
+.personal-accident-steps-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.personal-accident-steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.personal-accident-step {
+    position: relative;
+}
+
+.personal-accident-step-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.personal-accident-step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+    border-color: var(--lawyer-blue);
+}
+
+.personal-accident-step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--lawyer-red);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: 4px solid var(--white);
+    z-index: 2;
+}
+
+.personal-accident-step-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--lawyer-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto 1.5rem;
+}
+
+.personal-accident-step-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.personal-accident-step-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.personal-accident-step-content p {
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Why Andrew Section */
+.personal-why-andrew-section {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.personal-andrew-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.personal-andrew-card {
+    background: var(--white);
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.personal-andrew-card:hover {
+    border-color: var(--lawyer-red);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.personal-andrew-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--lawyer-red), #a32525);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.personal-andrew-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.personal-andrew-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.personal-andrew-card p {
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+}
+
+/* Areas We Serve Section */
+.personal-areas-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.personal-areas-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.personal-areas-list {
+    font-size: 1.2rem;
+    color: var(--lawyer-grey);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Personal Consultation CTA Section */
+.personal-consultation-cta-section {
+    background: var(--lawyer-blue);
+    padding: 6rem 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.personal-consultation-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.personal-consultation-header p {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.personal-consultation-content {
+    margin-top: 3rem;
+}
+
+.personal-consultation-message {
+    margin-bottom: 3rem;
+}
+
+.personal-consultation-message {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin: 0;
+    font-weight: 600;
+}
+
+.personal-consultation-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.personal-consultation-feature {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.personal-consultation-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.personal-consultation-feature-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--lawyer-red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-consultation-feature-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.personal-consultation-feature span {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-black);
+    text-align: center;
+}
+
+.personal-consultation-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.personal-consultation-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.2rem 2.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.personal-consultation-btn.primary {
+    background: var(--lawyer-red);
+    color: var(--white);
+    border-color: var(--lawyer-red);
+}
+
+.personal-consultation-btn.primary:hover {
+    background: #a32525;
+    border-color: #a32525;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 30, 30, 0.3);
+}
+
+.personal-consultation-btn.secondary {
+    background: var(--white);
+    color: var(--lawyer-blue);
+    border-color: var(--white);
+}
+
+.personal-consultation-btn.secondary:hover {
+    background: var(--light-grey);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.personal-consultation-btn i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design for Personal Injury Sections */
+@media (max-width: 968px) {
+    .personal-consultation-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .personal-consultation-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .personal-consultation-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .personal-why-card,
+    .personal-case-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .personal-case-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .personal-case-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .personal-accident-steps-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .personal-accident-step-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .personal-consultation-header h2 {
+        font-size: 2rem;
+    }
+    
+    .personal-consultation-header p {
+        font-size: 1.1rem;
+    }
+    
+    .personal-consultation-message p {
+        font-size: 1.2rem;
+    }
+    
+    .personal-consultation-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-why-icon,
+    .personal-andrew-icon,
+    .personal-law-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .personal-why-icon i,
+    .personal-andrew-icon i,
+    .personal-law-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .personal-case-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .personal-case-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .personal-accident-step-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .personal-accident-step-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .personal-accident-step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        top: -10px;
+    }
+    
+    .personal-consultation-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .personal-consultation-feature {
+        padding: 1.5rem;
+    }
+    
+    .personal-consultation-feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .personal-consultation-feature-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .personal-consultation-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* ===== DIVORCE, CUSTODY, ADOPTION PAGE STYLES ===== */
+
+/* Services Grid for Individual Pages */
+.divorce-services-section,
+.custody-services-section,
+.adoption-services-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.divorce-services-grid,
+.custody-services-grid,
+.adoption-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.divorce-service-card,
+.custody-service-card,
+.adoption-service-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+}
+
+.divorce-service-card:hover,
+.custody-service-card:hover,
+.adoption-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+    border-color: var(--lawyer-blue);
+}
+
+.divorce-service-card h3,
+.custody-service-card h3,
+.adoption-service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--lawyer-blue);
+    padding-bottom: 1rem;
+}
+
+.divorce-service-card p,
+.custody-service-card p,
+.adoption-service-card p {
+    font-size: 1rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    max-width: none;
+}
+
+.divorce-service-card p strong,
+.custody-service-card p strong,
+.adoption-service-card p strong {
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+/* Process/Laws Content Sections */
+.divorce-process-section,
+.custody-laws-section,
+.adoption-process-section {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.divorce-process-content,
+.custody-laws-content,
+.adoption-process-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.divorce-process-content p,
+.custody-laws-content p,
+.adoption-process-content p {
+    font-size: 1.1rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: none;
+}
+
+.divorce-process-content p strong,
+.custody-laws-content p strong,
+.adoption-process-content p strong {
+    color: var(--text-black);
+    font-weight: 700;
+}
+
+/* Why Choose Sections */
+.divorce-why-choose-section,
+.custody-why-choose-section,
+.adoption-why-choose-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.divorce-why-choose-content,
+.custody-why-choose-content,
+.adoption-why-choose-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.divorce-why-choose-content p,
+.custody-why-choose-content p,
+.adoption-why-choose-content p {
+    font-size: 1.2rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: none;
+}
+
+.divorce-why-choose-content p strong,
+.custody-why-choose-content p strong,
+.adoption-why-choose-content p strong {
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+/* Final CTA Sections */
+.divorce-final-cta-section,
+.custody-final-cta-section,
+.adoption-final-cta-section {
+    background: var(--white);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.divorce-final-cta-content,
+.custody-final-cta-content,
+.adoption-final-cta-content {
+    margin-top: 3rem;
+}
+
+.divorce-final-cta-content p,
+.custody-final-cta-content p,
+.adoption-final-cta-content p {
+    font-size: 1.3rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 1.5rem;
+    max-width: none;
+}
+
+.divorce-final-cta-content p strong,
+.custody-final-cta-content p strong,
+.adoption-final-cta-content p strong {
+    color: var(--text-black);
+    font-weight: 700;
+}
+
+.divorce-final-cta-buttons,
+.custody-final-cta-buttons,
+.adoption-final-cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Responsive Design for Individual Pages */
+@media (max-width: 968px) {
+    .divorce-services-grid,
+    .custody-services-grid,
+    .adoption-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .divorce-service-card,
+    .custody-service-card,
+    .adoption-service-card {
+        padding: 2rem;
+    }
+    
+    .divorce-final-cta-buttons,
+    .custody-final-cta-buttons,
+    .adoption-final-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .divorce-service-card,
+    .custody-service-card,
+    .adoption-service-card {
+        padding: 1.5rem;
+    }
+    
+    .divorce-service-card h3,
+    .custody-service-card h3,
+    .adoption-service-card h3 {
+        font-size: 1.3rem;
+    }
+}

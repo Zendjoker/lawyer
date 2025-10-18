@@ -842,3 +842,216 @@
         gap: 1rem;
     }
 }
+
+/* NEW SPECIALIZED FAMILY LAW SECTIONS */
+
+/* Specialized Hero Section */
+.family-specialized-hero {
+    background: var(--white);
+    padding: 8rem 0 6rem;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.family-specialized-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.family-specialized-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--lawyer-red);
+    margin-bottom: 2rem;
+}
+
+.family-specialized-content p {
+    font-size: 1.25rem;
+    color: var(--lawyer-grey);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+}
+
+.family-specialized-cta {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Areas of Expertise Section */
+.family-expertise-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.family-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.family-expertise-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+}
+
+.family-expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+    border-color: var(--lawyer-blue);
+}
+
+.family-expertise-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--lawyer-blue);
+    padding-bottom: 1rem;
+}
+
+.family-expertise-card p {
+    font-size: 1rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    max-width: none;
+}
+
+.family-expertise-card p strong {
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+/* Why Choose Andrew Section */
+.family-why-choose-section {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.family-why-choose-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.family-why-choose-content p {
+    font-size: 1.2rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: none;
+}
+
+.family-why-choose-content p strong {
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+/* Serving Families Section */
+.family-serving-section {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.family-serving-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.family-serving-content p {
+    font-size: 1.2rem;
+    color: var(--lawyer-grey);
+    line-height: 1.8;
+    max-width: none;
+    margin: 0;
+}
+
+/* Final CTA Section */
+.family-final-cta-section {
+    background: var(--white);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.family-final-cta-content {
+    margin-top: 3rem;
+}
+
+.family-final-cta-content p {
+    font-size: 1.3rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 1.5rem;
+    max-width: none;
+}
+
+.family-final-cta-content p strong {
+    color: var(--text-black);
+    font-weight: 700;
+}
+
+.family-final-cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 968px) {
+    .family-specialized-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .family-expertise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .family-expertise-card {
+        padding: 2rem;
+    }
+    
+    .family-final-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .family-specialized-content h1 {
+        font-size: 2rem;
+    }
+    
+    .family-specialized-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .family-specialized-content p {
+        font-size: 1.1rem;
+    }
+    
+    .family-expertise-card {
+        padding: 1.5rem;
+    }
+    
+    .family-expertise-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .family-specialized-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+}
