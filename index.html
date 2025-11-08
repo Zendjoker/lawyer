@@ -8,9 +8,9 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="../components/navbar.css">
-    <link rel="stylesheet" href="../components/footer.css">
-    <link rel="stylesheet" href="../components/contact-form.css">
+    <link rel="stylesheet" href="components/navbar.css">
+    <link rel="stylesheet" href="components/footer.css">
+    <link rel="stylesheet" href="components/contact-form.css">
     <link rel="stylesheet" href="css/home.css">
     
     <!-- Fonts -->
@@ -51,13 +51,13 @@
                 </div>
                 <div class="hero-image">
                     <div class="arrow-message">
-                        <img src="../images/arrow1-200x126.png" alt="Arrow" class="arrow-img">
+                        <img src="images/arrow1-200x126.png" alt="Arrow" class="arrow-img">
                         <div class="message-box">
                             <h3>Need Family Law Help?</h3>
                             <p>Click to schedule your consultation</p>
                         </div>
                     </div>
-                    <img src="../images/andrewbg.png" alt="Andrew Filipour - Atlanta Family Law Attorney" class="hero-img clickable-lawyer">
+                    <img src="images/andrewbg.png" alt="Andrew Filipour - Atlanta Family Law Attorney" class="hero-img clickable-lawyer">
                 </div>
             </div>
         </div>
@@ -400,13 +400,13 @@
     </button>
 
     <!-- Scripts -->
-    <script src="../components/navbar.js"></script>
+    <script src="components/navbar.js"></script>
     <script src="js/home.js"></script>
     
     <!-- Load Contact Form Component -->
     <script>        
         // Load navbar component
-        fetch('../components/navbar.html')
+        fetch('components/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
@@ -424,7 +424,7 @@
             });
 
         // Load contact form component
-        fetch('../components/contact-form.html')
+        fetch('components/contact-form.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('contactFormContainer').innerHTML = html;
@@ -433,7 +433,7 @@
                 setTimeout(() => {
                     // Load the contact form JavaScript and initialize
                     const script = document.createElement('script');
-                    script.src = '../components/contact-form.js';
+                    script.src = 'components/contact-form.js';
                     script.onload = function() {
                         // Wait a bit more and then initialize
                         setTimeout(() => {
@@ -459,7 +459,7 @@
             });
             
         // Load footer component
-        fetch('../components/footer.html')
+        fetch('components/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer-placeholder').innerHTML = data;
