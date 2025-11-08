@@ -47,8 +47,8 @@
 }
 
 .footer-brand-image {
-    width: 45px;
-    height: 45px;
+    width: 315px;
+    height: 65px;
     object-fit: contain;
 }
 
@@ -335,8 +335,11 @@
     }
     
     .footer-contact-section {
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
+        width: 400px;
+        text-align: left;
+        padding: 20px 40px;
     }
     
     .footer-contact-item {
@@ -344,7 +347,8 @@
     }
     
     .footer-navigation {
-        align-items: center;
+       align-items: flex-start;
+    padding: 0px 60px;
     }
     
     .footer-nav-link {
@@ -361,6 +365,7 @@
         justify-content: center;
         gap: 0.5rem;
     }
+    
 }
 
 @media screen and (max-width: 640px) {

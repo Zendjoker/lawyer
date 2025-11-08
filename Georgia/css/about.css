@@ -1,0 +1,650 @@
+/* About Page Styles - Following Website Theme */
+
+/* About Hero Section */
+.about-hero {
+    background: var(--white);
+    padding: 8rem 0 6rem;
+    margin-top: 110px;
+}
+
+.about-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--lawyer-blue);
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: var(--lawyer-grey);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Attorney Photo */
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.attorney-photo {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.attorney-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.experience-badge {
+    color: var(--white);
+    text-align: center;
+}
+
+.badge-text {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.badge-subtext {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Professional Background Section */
+.professional-background {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--lawyer-grey);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.background-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.background-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.background-item:last-child {
+    margin-bottom: 0;
+}
+
+.background-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--lawyer-blue);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.background-details h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.background-details p {
+    font-size: 1rem;
+    color: var(--lawyer-grey);
+    line-height: 1.7;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--lawyer-red);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--lawyer-blue);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--lawyer-grey);
+    font-weight: 600;
+}
+
+/* Practice Philosophy Section */
+.practice-philosophy {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.philosophy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.philosophy-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1.5rem;
+}
+
+.philosophy-intro {
+    font-size: 1.1rem;
+    color: var(--lawyer-grey);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.philosophy-points {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.philosophy-point {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.point-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--lawyer-red);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.point-content h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.5rem;
+}
+
+.point-content p {
+    font-size: 0.95rem;
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+}
+
+/* Philosophy Image */
+.philosophy-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    max-width: 400px;
+}
+
+.office-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.image-caption p {
+    font-style: italic;
+    color: var(--lawyer-grey);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.image-caption span {
+    color: var(--lawyer-blue);
+    font-weight: 600;
+}
+
+/* Areas of Expertise Section */
+.areas-expertise {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.expertise-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--lawyer-blue);
+}
+
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.expertise-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--lawyer-blue);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 1.5rem;
+}
+
+.expertise-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.expertise-card p {
+    font-size: 1rem;
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.expertise-link {
+    color: var(--lawyer-red);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.expertise-link:hover {
+    color: var(--lawyer-blue);
+}
+
+.expertise-link i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.expertise-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Why Choose Section */
+.why-choose {
+    background: var(--white);
+    padding: 6rem 0;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.choose-reason {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.choose-reason:hover {
+    background: var(--light-grey);
+    transform: translateY(-5px);
+}
+
+.reason-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--lawyer-red);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1.5rem;
+}
+
+.choose-reason h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.choose-reason p {
+    font-size: 0.95rem;
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+}
+
+/* About CTA Section */
+.about-cta {
+    background: var(--light-grey);
+    padding: 6rem 0;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    color: var(--lawyer-grey);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.consultation-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--lawyer-grey);
+    font-size: 0.95rem;
+}
+
+.benefit-item i {
+    color: var(--lawyer-blue);
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background: var(--lawyer-red);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid var(--lawyer-red);
+}
+
+.btn-primary:hover {
+    background: var(--white);
+    color: var(--lawyer-red);
+    transform: translateY(-2px);
+}
+
+.btn-primary.large {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--lawyer-blue);
+    padding: 1rem 2rem;
+    border: 2px solid var(--lawyer-blue);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background: var(--lawyer-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-secondary.large {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 4rem 0 3rem;
+        margin-top: 90px;
+    }
+    
+    .about-hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .attorney-photo {
+        width: 250px;
+        height: 320px;
+    }
+    
+    .professional-background,
+    .practice-philosophy,
+    .areas-expertise,
+    .why-choose,
+    .about-cta {
+        padding: 3rem 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .background-content,
+    .philosophy-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .stats-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .stat-card {
+        padding: 1.5rem 1rem;
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .expertise-grid,
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-primary.large,
+    .btn-secondary.large {
+        width: 100%;
+        justify-content: center;
+        max-width: 300px;
+    }
+    
+    .consultation-benefits {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .attorney-photo {
+        width: 200px;
+        height: 280px;
+    }
+    
+    .background-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .philosophy-point {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        margin: 0;
+    }
+    
+    .consultation-benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+}
