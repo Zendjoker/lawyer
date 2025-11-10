@@ -1,0 +1,35 @@
+
+================================================================================
+Date: 2025-11-10 06:48:55
+Name: Test Submission
+Email: test@example.com
+Phone: 404-555-1234
+Case Type: Family Law
+Message: Testing the new form handler with logging
+================================================================================
+
+================================================================================
+Date: 2025-11-10 06:53:36
+Name: John Doe
+Email: john.doe@example.com
+Phone: 404-555-1234
+Country: US
+Case Type: family-law
+Timeframe: weeks
+Preferred Contact: phone
+Contact Time: 9am
+Message: I need help with a divorce case. Looking for an experienced attorney.
+================================================================================
+
+================================================================================
+Date: 2025-11-10 06:54:28
+Name: John Doe
+Email: john.doe@example.com
+Phone: 404-555-1234
+Country: US
+Case Type: family-law
+Timeframe: weeks
+Preferred Contact: phone
+Contact Time: 9am
+Message: Test message
+================================================================================
