@@ -827,7 +827,7 @@
 @media (max-width: 640px) {
     .practice-hero {
         padding: 4rem 0 3rem;
-        margin-top: 80px;
+        margin-top: 100px;
     }
     
     .hero-layout {
@@ -883,7 +883,7 @@
     .why-choose-section,
     .contact-info-practice,
     .contact-form-section {
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
     
     .services-grid,
@@ -2475,7 +2475,7 @@
 .custody-services-section,
 .adoption-services-section {
     background: var(--light-grey);
-    padding: 6rem 0;
+    padding: 1rem 0;
 }
 
 .divorce-services-grid,
@@ -2539,7 +2539,7 @@
 .custody-laws-section,
 .adoption-process-section {
     background: var(--white);
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .divorce-process-content,
@@ -2571,7 +2571,7 @@
 .custody-why-choose-section,
 .adoption-why-choose-section {
     background: var(--light-grey);
-    padding: 6rem 0;
+    padding: 1rem 0;
 }
 
 .divorce-why-choose-content,
@@ -2604,7 +2604,7 @@
 .custody-final-cta-section,
 .adoption-final-cta-section {
     background: var(--white);
-    padding: 6rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
