@@ -230,6 +230,10 @@ img {
 
 /* Mobile Responsive with Professional Spacing */
 @media (max-width: 968px) {
+    body {
+        padding-top: 0;
+    }
+    
     .container {
         padding: 0 2rem;
     }
