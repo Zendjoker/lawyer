@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle contact form submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // Get form data
@@ -105,9 +105,47 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             if (isValid) {
-                // Show success message
-                showMessage('Thank you for your message. We will contact you within 24 hours to schedule your free consultation.', 'success');
-                this.reset();
+                try {
+                    // Show loading state
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalBtnText = submitBtn ? submitBtn.textContent : '';
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.textContent = 'Sending...';
+                    }
+                    
+                    // Send form data to PHP backend
+                    const response = await fetch('/submit-form.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formValues)
+                    });
+
+                    const result = await response.json();
+
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalBtnText;
+                    }
+
+                    if (response.ok && result.success) {
+                        showMessage(result.message || 'Thank you for your message. We will contact you within 24 hours to schedule your free consultation.', 'success');
+                        this.reset();
+                    } else {
+                        throw new Error(result.message || 'Failed to send message');
+                    }
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    showMessage('There was an error sending your message. Please call us at (404) 948-3311.', 'error');
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Send Message';
+                    }
+                }
             } else {
                 showMessage('Please fill in all required fields.', 'error');
             }

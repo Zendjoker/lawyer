@@ -8,7 +8,6 @@ class HamburgerMenu {
         
         this.hamburgerBtn = document.getElementById('hamburger-menu');
         this.mobileOverlay = document.getElementById('mobile-menu-overlay');
-        this.closeBtn = document.getElementById('mobile-menu-close');
         this.dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
         this.body = document.body;
         
@@ -34,15 +33,6 @@ class HamburgerMenu {
             console.log('Hamburger button clicked');
             this.toggleMenu();
         });
-        
-        // Close button click
-        if (this.closeBtn) {
-            this.closeBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                console.log('Close button clicked');
-                this.closeMenu();
-            });
-        }
         
         // Overlay click to close
         this.mobileOverlay.addEventListener('click', (e) => {
@@ -75,6 +65,14 @@ class HamburgerMenu {
                 this.closeMenu();
             });
         });
+        
+        // Close menu when clicking on mobile logo
+        const mobileLogo = document.querySelector('.mobile-logo a');
+        if (mobileLogo) {
+            mobileLogo.addEventListener('click', () => {
+                this.closeMenu();
+            });
+        }
         
         // Handle ESC key
         document.addEventListener('keydown', (e) => {

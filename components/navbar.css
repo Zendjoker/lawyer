@@ -341,9 +341,24 @@
     border-bottom: 2px solid var(--light-grey);
 }
 
+.mobile-logo {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-logo a {
+    display: flex;
+    align-items: center;
+}
+
 .mobile-logo .logo-img {
     height: 50px;
     width: auto;
+    transition: transform 0.3s ease;
+}
+
+.mobile-logo a:hover .logo-img {
+    transform: scale(1.05);
 }
 
 .mobile-menu-close {

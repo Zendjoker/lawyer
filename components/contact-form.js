@@ -357,19 +357,39 @@ class ContactForm {
     }
 
     async submitForm() {
-        // Simulate API call delay
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        
-        // Here you would normally send the data to your backend
-        console.log('📋 Final Form Submission Data:');
-        console.log('=================================');
-        Object.entries(this.formData).forEach(([key, value]) => {
-            console.log(`${key}: ${value}`);
-        });
-        console.log('=================================');
-        
-        // For demo purposes, we'll just resolve successfully
-        return { success: true };
+        try {
+            // Send form data to PHP backend
+            const response = await fetch('/submit-form.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(this.formData)
+            });
+
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || 'Failed to submit form');
+            }
+
+            console.log('📋 Form submitted successfully');
+            console.log('Response:', result);
+            
+            return result;
+        } catch (error) {
+            console.error('Form submission error:', error);
+            
+            // Log the form data for debugging
+            console.log('📋 Form Data (not submitted):');
+            console.log('=================================');
+            Object.entries(this.formData).forEach(([key, value]) => {
+                console.log(`${key}: ${value}`);
+            });
+            console.log('=================================');
+            
+            throw error;
+        }
     }
 
     showSuccessMessage() {

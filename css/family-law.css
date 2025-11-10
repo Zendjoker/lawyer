@@ -934,48 +934,112 @@
 }
 
 /* Why Choose Andrew Section */
+/* Why Choose Andrew Section */
 .family-why-choose-section {
-    background: var(--white);
+    background: linear-gradient(135deg, var(--light-grey) 0%, #ffffff 100%);
     padding: 6rem 0;
 }
 
-.family-why-choose-content {
+.family-why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.why-choose-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
-.family-why-choose-content p {
-    font-size: 1.2rem;
-    color: var(--lawyer-grey);
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-    max-width: none;
+.why-choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--lawyer-blue);
 }
 
-.family-why-choose-content p strong {
+.why-choose-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--lawyer-blue) 0%, var(--lawyer-red) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.why-choose-card h3 {
+    font-size: 1.4rem;
     color: var(--text-black);
+    margin-bottom: 1rem;
     font-weight: 600;
+}
+
+.why-choose-card p {
+    font-size: 1rem;
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+    margin: 0;
+    max-width: none;
 }
 
 /* Serving Families Section */
 .family-serving-section {
-    background: var(--light-grey);
+    background: var(--lawyer-blue);
     padding: 6rem 0;
+    text-align: center;
+}
+
+.family-serving-section .section-header h2 {
+    color: var(--white);
 }
 
 .family-serving-content {
-    text-align: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.family-serving-content p {
+.serving-locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0 2rem;
+}
+
+.location-badge {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.location-badge:hover {
+    background: var(--white);
+    color: var(--lawyer-blue);
+    transform: scale(1.05);
+}
+
+.serving-description {
     font-size: 1.2rem;
-    color: var(--lawyer-grey);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.8;
-    max-width: none;
-    margin: 0;
+    max-width: 700px;
+    margin: 2rem auto 0;
 }
 
 /* Final CTA Section */
@@ -1027,6 +1091,20 @@
         flex-direction: column;
         align-items: center;
     }
+    
+    .family-why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .serving-locations {
+        gap: 0.75rem;
+    }
+    
+    .location-badge {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1053,5 +1131,24 @@
     .family-specialized-cta {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .why-choose-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .why-choose-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.75rem;
+    }
+    
+    .location-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .serving-description {
+        font-size: 1.1rem;
     }
 }

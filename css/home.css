@@ -1282,18 +1282,6 @@
     overflow: hidden;
 }
 
-.practice-card.featured::before {
-    content: "PRIMARY FOCUS";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--lawyer-red);
-    color: var(--white);
-    padding: 0.25rem 0.75rem;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
 
 .practice-card p {
     font-size: 0.95rem;

@@ -1,0 +1,236 @@
+/* Adoption Page Styles */
+
+/* Georgia Adoption Process Section */
+.adoption-process-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, var(--white) 100%);
+    padding: 5rem 0;
+}
+
+.adoption-process-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 2rem 0;
+}
+
+.adoption-process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--lawyer-blue) 0%, var(--lawyer-red) 100%);
+    transform: translateX(-50%);
+}
+
+.adoption-step {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.adoption-step:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.adoption-step-content {
+    width: calc(50% - 40px);
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.adoption-step-content:hover {
+    border-color: var(--lawyer-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.adoption-step:nth-child(even) .adoption-step-content {
+    margin-left: auto;
+}
+
+.adoption-step-number {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--lawyer-blue) 0%, var(--lawyer-red) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 4px solid var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.adoption-step-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.adoption-step-title i {
+    color: var(--lawyer-blue);
+    font-size: 1.2rem;
+}
+
+.adoption-step-description {
+    color: var(--lawyer-grey);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Why Choose Andrew Section */
+.adoption-why-choose-section {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.adoption-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.adoption-why-card {
+    background: linear-gradient(135deg, var(--light-grey) 0%, var(--white) 100%);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.adoption-why-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--lawyer-blue) 0%, var(--lawyer-red) 100%);
+}
+
+.adoption-why-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--lawyer-blue);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.adoption-why-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--lawyer-blue) 0%, #2a4fa0 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 15px rgba(31, 60, 136, 0.2);
+}
+
+.adoption-why-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.adoption-why-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.adoption-why-card p {
+    color: var(--lawyer-grey);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+    max-width: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+    .adoption-process-timeline::before {
+        left: 30px;
+    }
+    
+    .adoption-step {
+        flex-direction: column !important;
+        padding-left: 80px;
+    }
+    
+    .adoption-step-content {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    
+    .adoption-step-number {
+        left: 30px;
+        transform: none;
+    }
+    
+    .adoption-why-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .adoption-process-section {
+        padding: 3rem 0;
+    }
+    
+    .adoption-step {
+        padding-left: 70px;
+        margin-bottom: 2rem;
+    }
+    
+    .adoption-step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        left: 25px;
+    }
+    
+    .adoption-step-content {
+        padding: 1.5rem;
+    }
+    
+    .adoption-step-title {
+        font-size: 1.2rem;
+    }
+    
+    .adoption-why-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .adoption-why-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .adoption-why-icon i {
+        font-size: 1.75rem;
+    }
+}
